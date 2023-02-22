@@ -15,7 +15,7 @@ describe('TodoRequestOptions', () => {
 
 	it('getTodoIdUrl({id: Int}) should return Int/', () => {
 		var filter = {id: 1}
-		expect(todoRequestOptions.getTodoIdUrl( filter )).to.equal(filter.id + '/')
+		expect(todoRequestOptions.getTodoIdUrl( filter )).to.equal(filter.id + '/3')
 
 		filter = {id: 2}
 		expect(todoRequestOptions.getTodoIdUrl( filter )).to.equal(filter.id + '/')
